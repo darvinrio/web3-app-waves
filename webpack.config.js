@@ -2,10 +2,10 @@ const { builtinModules } = require("module");
 
 module.exports = {
     entry: [
-        './src/main.js'
+        './src/seedIndex.js'
     ],
     output: {
-        filename : 'build.js'
+        filename : 'dapp.js'
     },
     module: {
         rules: [

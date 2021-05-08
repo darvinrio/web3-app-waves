@@ -4,9 +4,14 @@
   "dependencies": {
     "@babel/preset-env": "7.14.1",
     "@babel/preset-react": "^7.13.13",
+    "@waves.exchange/provider-web": "^1.0.2",
+    "@waves/provider-seed": "^0.1.1",
+    "@waves/signer": "^1.0.2",
+    "@waves/waves-transactions": "*",
     "babel": "^6.23.0",
     "babel-core": "^6.26.3",
     "express": "4.17.1",
+    "node-forge": "^0.8.5",
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
   },

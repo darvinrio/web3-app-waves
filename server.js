@@ -3,7 +3,7 @@ const express = require ('express')
 const app = express()
 
 app.get('/', (req, res) => {
-    res.sendFile('home.html', {root : __dirname})
+    res.sendFile('index.html', {root : __dirname})
 })
 
 app.use(express.static(__dirname + "/dist"))
