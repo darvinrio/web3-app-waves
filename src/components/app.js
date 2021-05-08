@@ -6,10 +6,25 @@ class App extends React.Component {
         super(props)
         this.state = {}
     }
+    authFunc() {
+        const authData = { data: "Auth on my site"}
+        if (WavesKeeper) {
+            WavesKeeper.auth( authData)
+            .then( auth => {
+                console.log(  auth )
+            })
+            .catch( error => {
+                console.error( error )
+            })
+        }
+        else {
+            alert("Waves Keeper not installed")
+        }
+    }
     render() {
         return (
             <div className = "container">
-                <input className = "btn btn-primary" type = "submit" value = "Alert" onClick = {() => {alert("Alert button onClick")}}/>
+                <input className = "btn btn-primary" type = "submit" value = "Auth" onClick = {this.authFunc}/>
             </div>
         )
     }
